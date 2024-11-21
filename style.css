@@ -142,6 +142,7 @@ a {
 /* Ensure the container has relative positioning */
 #threejs-container {
     position: relative;
+    cursor:move;
 }
 
 /* Loading overlay */
