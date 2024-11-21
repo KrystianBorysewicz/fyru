@@ -7,14 +7,14 @@ const container = document.getElementById('threejs-container');
 const scene = new THREE.Scene();
 
 // Set the background color
-scene.background = new THREE.Color('#f8f4ec');
+// scene.background = new THREE.Color('#f8f4ec');
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
 camera.position.set(0, 1, 7);
 
 // Renderer
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setSize(container.offsetWidth, container.offsetHeight);
 container.appendChild(renderer.domElement);
 
