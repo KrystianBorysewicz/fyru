@@ -31,7 +31,7 @@ loader.load(
         console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
     },
     (error) => {
-        console.error('An error happened', error);
+        console.error('An error happened with loading the model', error);
     }
 );
 
